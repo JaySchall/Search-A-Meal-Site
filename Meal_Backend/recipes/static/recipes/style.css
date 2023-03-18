@@ -1,0 +1,176 @@
+/*Some Jerome stuff*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    /*background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75));*/
+    background-color: rgb(250, 250, 250);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar url li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px
+}
+.navbar url li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+.webname hl{
+    font-size: 20px;
+}
+
+.search-bar{
+    width: 100%;
+    max-width: 340px;
+    background: #a0d6b4;
+    display: flex;
+    align-items: self-start;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.webname .search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: rgb(75, 75, 75);
+}
+
+::placeholder{
+    color: rgb(75, 75, 75);
+}
+
+.search-bar button img{
+    width: 25px;
+}
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+}
+/*Some Gabe stuff*/
+.center{
+    text-align: center;
+ }
+
+ .Bg{
+    height: 100vh;
+    width: 100%;
+    background-color: #a0d6b4;
+    position: absolute;
+ }
+ .Box{
+    width: 380px;
+    height: 410px;
+    position: relative;
+    margin: 10% auto;
+    background-color: rgb(250, 250, 250);
+    padding: 5px;
+    border-radius: 20px;
+ }
+ 
+ 
+ .inputBox{
+    position: relative;
+    padding: 5px;
+    width: 240px;
+    height: 1%;
+    background-color: white;
+    margin: 6% auto;
+    border: black;
+    text-align: left;
+    font-size: 1%;
+    color: lightgray;
+    border-color: black;
+    border-style: solid;
+ }
+ 
+ .Box .search-bar{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ .Box .search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    color: rgb(20, 20, 20);
+}
+ 
+ .loginOrRegister{
+    margin: 10px 0;
+    text-align: center;
+    font-size: 16px;
+ }
+ .text{
+    position: relative;
+    margin: 20px;
+ }
+ .text input{
+    position: relative;
+    margin: 20px;
+    width: 75%;
+    padding: 0 5px;
+    height: 20px;
+    font-size: 16px;
+ }
+ 
+ 
+ input[type= "submit"]{
+    position: relative;
+    width: 30%;
+    height: auto;
+    left: 35%;
+    border: 1px solid;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    background: #a0d6b4;
+    
+ }
+ .titlebox{
+    position: relative;
+    top: 20px;
+    border-radius: 15px;
+    margin: auto;
+    padding: 10px;
+    width: fit-content;
+    background-color: rgb(250, 250, 250);
+    
+ }
+ .title{
+    position: relative;
+    color: black;
+    margin-top: 10px;
+    border: 1px transparent;
+    font-size: 30px;
+    text-decoration: none;
+ }

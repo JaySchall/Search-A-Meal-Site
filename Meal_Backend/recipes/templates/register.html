@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Register Page</title>
+   <meta charset="UTF-8">
+   <link rel="shortcut icon" href="{% static 'recipes/images/search.png' %}">
+   <link rel="stylesheet" href="{% static 'recipes/style.css' %}">
+</head>
+<body>
+     <div class = "Bg">
+      <div class="titlebox">
+         <a href="../" class="title">Search A Meal</a>
+      </div>
+        <div class ="Box">
+           <div class ="center"><h2>Welcome!</h2></div>
+           <form method="POST">
+            {% csrf_token %}
+            <div class = "search-bar">
+              <input type = "Email" required placeholder = "Enter Your Email">
+            </div>
+            <div class = "search-bar">
+            <input type = "Display Name" required placeholder = "Enter a Display Name">
+            </div>
+            <div class = "search-bar">
+              <input type = "password" required placeholder = "Enter a Password">
+            </div>
+               <input type = "submit" value = "Register">
+            </form>
+           <div class = "loginOrRegister">
+              Already have an account? <a href="../login">Login Here</a>
+           </div>
+         </div>
+      </div>
+</html>
