@@ -1,0 +1,78 @@
+.center{
+    margin-left: 40%;
+    font-size: 25px;
+    font-family: Cambria;
+ }
+ .recipeText{
+    margin-left: 50px;
+    margin-bottom: 50px;
+    float: left; 
+ }
+ .RecipeBg{
+    height:100%;
+    width: 100%;
+    background-color: white
+ }
+ input[type= "button"]{
+    background: white;
+    position: center;
+    width: 30%;
+    height: 30px;
+    margin-left: 420px;
+    border: 1px transparent;
+    font-size: 30px;
+    cursor: pointer;
+ } 
+.background{
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+}
+.text{
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+}
+.icons img{
+    height:25px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.icons{
+    margin-left: 250px;
+}
+.bookmark{
+    height:25px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.food{
+    height: 400px;
+    width: 400px;
+    float: right;
+}
+.Desc{
+    height: 200px;
+    width:650px;
+    text-align: left;
+    position:left;
+    align-items: left;
+
+}
+.Ingredients{
+    height:200px;
+    width:650px;
+    text-align: left;
+    position:left;
+    align-items: left;
+    float: left;
+
+}
+.Instructions{
+    height:300px;
+    width:650px;
+    text-align: left;
+    position:left;
+    align-items: left;
+
+}
