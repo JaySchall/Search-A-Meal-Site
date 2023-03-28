@@ -18,10 +18,12 @@
             <form method="POST">
                {% csrf_token %}
             <div class = "search-bar">
-               <input type = "username" required placeholder = "Username">
+               {{ form.email }}
+               <!--<input type = "username" required placeholder = "Username">-->
             </div>
             <div class = "search-bar">
-               <input type = "password" required placeholder ="Password">
+               {{ form.password }}
+               <!--<input type = "password" required placeholder ="Password">-->
             </div>
             <input type = "submit" value = "Login">
             </form>

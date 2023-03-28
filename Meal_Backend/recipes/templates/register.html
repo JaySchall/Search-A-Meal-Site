@@ -16,14 +16,21 @@
            <div class ="center"><h2>Welcome!</h2></div>
            <form method="POST">
             {% csrf_token %}
+
+            
+            
+            
             <div class = "search-bar">
-              <input type = "Email" required placeholder = "Enter Your Email">
+               {{ form.email }}
+              <!--<input id = "email" type = "Email" required placeholder = "Enter Your Email">-->
             </div>
             <div class = "search-bar">
-            <input type = "Display Name" required placeholder = "Enter a Display Name">
+               {{ form.displayname }}
+            <!--<input id = "displayname" type = "Display Name" required placeholder = "Enter a Display Name">-->
             </div>
             <div class = "search-bar">
-              <input type = "password" required placeholder = "Enter a Password">
+               {{ form.password }}
+              <!--<input id = "password" type = "password" required placeholder = "Enter a Password">-->
             </div>
                <input type = "submit" value = "Register">
             </form>

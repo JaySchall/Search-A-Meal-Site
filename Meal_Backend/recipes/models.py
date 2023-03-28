@@ -31,9 +31,9 @@ class Recipe(models.Model):
 
 
 class Users(models.Model):
-    email = models.TextField(primary_key=True)
-    password = models.TextField()
-    displayname = models.TextField()
+    email = models.CharField(primary_key=True, max_length=30)
+    password = models.CharField(max_length=30)
+    displayname = models.CharField(max_length=30)
 
     class Meta:
         managed = False
