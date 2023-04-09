@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate
+from django.contrib.auth.hashers import make_password
 from .forms import registerForm, loginForm
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib import messages
@@ -19,12 +20,14 @@ def home(request):
 #def search(request):
     #allrecipes = Recipe.objects.all()
 
-def login(request):
+def loginUser(request):
     if request.method == "POST":
-        #form = loginForm(data=request.POST)
-        form = AuthenticationForm(request, data=request.POST)
+        form = loginForm(request.POST)
+        #form = AuthenticationForm(request, data=request.POST)
+        print("ok1")
         if form.is_valid():
-            user = authenticate(email=form.cleaned_data["email"], password=form.cleaned_data["password"])
+            print(make_password(form.cleaned_data["password"]))
+            user = authenticate(request, email=form.cleaned_data["email"], password=form.cleaned_data["password"])
             if user is not None:
                 login(request, user)
                 return redirect("/recipes")
@@ -43,6 +46,7 @@ def register(request):
     if request.method == "POST":
         form = registerForm(request.POST)
         if form.is_valid():
+            print(make_password(form.cleaned_data["password"]))
             user = Users.objects.create_user(form.cleaned_data["email"], form.cleaned_data["password"])
             return redirect("../login")
         else:
@@ -52,3 +56,13 @@ def register(request):
     else:
         form = registerForm()
         return render(request, 'register.html', {'form': form})
+
+def about(request):
+    return render(request, 'AboutPage.html')
+
+def recipeItem(request, name):
+    recipe = Recipe.objects.get(name=name)
+    context = {
+        'recipe': recipe,
+    }
+    return render(request, 'recipe.html', context)

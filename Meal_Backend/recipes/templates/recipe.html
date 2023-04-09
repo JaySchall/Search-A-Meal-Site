@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Recipe Page</title>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="{% static 'recipes/style.css' %}">
+</head>
+<body>
+   <div class="banner">
+      <div class = "navbar">
+          <div class="title">
+              <p><b>Search a Meal | Recipe</b></p>
+          </div>
+          <url>
+            <li><a href="/">Home</a></li>
+            <li><a href="/recipes/about">About</a></li>
+            <li><a href="UserPage.html" target="_self">Account</a></li>
+            <li><a href="/recipes/login">Login</a></li>
+          </url>
+      </div>
+      <hr>
+  </div>
+   <div class = "RecipeBg">
+     <!-- <div class= "background">
+        
+         <input type = "button" value = "Search-A-Meal">
+         <div class = "icons">
+           
+            <img src = "{% static 'recipes/images/profile pic.png' %}">
+            <img src = "{% static 'recipes/images/3 bar.png' %}">
+         
+         </div>
+         </div>-->
+         <div class= "background">
+            <div class ="center"><h2>{{ recipe.name }}</h2></div>
+            <img src = "{% static 'recipes/images/bookmark.png' %}" class = "bookmark">
+         </div>
+   
+
+
+<div class = "Desc">
+      <div class = "recipeText"><h2> Description </h2>
+      <p>{{ recipe.description }}</p></div>
+      </div>
+    
+      <img src = "{{ recipe.img_url }}" class = "food">
+      
+<div class = "Ingredients">
+   <div class = "recipeText"><h2> Ingredients </h2>
+      {% for ingredient in recipe.ingredients_as_list %}
+      {{ ingredient }}<br>
+      {% endfor %}
+   </div>
+</div>
+
+
+<div class = "Instuctions">
+   <div class = "recipeText"><h2> Instructions </h2> 
+      {% for instruction in recipe.instructions_as_list %}
+      {{ instruction }}<br>
+      {% endfor %}
+   </div>
+     
+</div>  
+</div>
+</html>

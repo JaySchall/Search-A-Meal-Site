@@ -20,14 +20,14 @@
 
             <url>
                 <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
+                <li><a href="about">About</a></li>
                 <li><a href="">Account</a></li>
                 <li><a href="login">Login</a></li>
             </url>
         </div>
         <div class="recipelist">
             {% for recipe in recipes %}
-            <a href=""><div class="recipeitem">
+            <a href="{% url 'Recipe_Item' recipe.name %}"><div class="recipeitem">
                 <h3>{{ recipe.name }}</h3>
                 <p>{{ recipe.description }}</p>
             </div></a>

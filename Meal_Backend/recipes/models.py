@@ -28,6 +28,10 @@ class Recipe(models.Model):
     ingredients = models.TextField(blank=True, null=True)
     img_url = models.TextField(blank=True, null=True)
 
+    def ingredients_as_list(self):
+        return self.ingredients.split("\n")
+    def instructions_as_list(self):
+        return self.instructions.split("\n")
     #class Meta:
         #managed = False
         #db_table = 'RECIPE'
