@@ -30,7 +30,7 @@ def loginUser(request):
             user = authenticate(request, email=form.cleaned_data["email"], password=form.cleaned_data["password"])
             if user is not None:
                 login(request, user)
-                return redirect("/recipes")
+                return redirect("/recipes/account")
             else:
                 messages.error(request,"Invalid username or password.")
                 print("huh")
@@ -63,7 +63,10 @@ def about(request):
     return render(request, 'AboutPage.html')
 
 def account(request):
-    return render(request, 'UserPage.html')
+    if request.user.is_authenticated:
+        return render(request, 'UserPage.html')
+    else:
+        return redirect("../login")
 
 def recipeItem(request, name):
     recipe = Recipe.objects.get(name=name)

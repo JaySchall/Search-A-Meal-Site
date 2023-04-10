@@ -27,6 +27,6 @@ class UserAdmin(DjangoUserAdmin):
     ordering = ('email',)
 
     class RecipeAdmin(admin.ModelAdmin):
-        list_display = ("name", "description")
+        list_display = ("id", "name", "description")
         
     admin.site.register(Recipe, RecipeAdmin)
