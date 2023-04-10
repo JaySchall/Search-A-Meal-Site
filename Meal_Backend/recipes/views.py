@@ -60,9 +60,14 @@ def register(request):
 def about(request):
     return render(request, 'AboutPage.html')
 
+def account(request):
+    return render(request, 'UserPage.html')
+
 def recipeItem(request, name):
     recipe = Recipe.objects.get(name=name)
     context = {
         'recipe': recipe,
     }
     return render(request, 'recipe.html', context)
+
+

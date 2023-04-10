@@ -1,7 +1,9 @@
+{% load static %}
+<!DOCTYPE html>
 <html>
 <head>
     <title>Search A Meal | Account Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href= "{% static 'recipes/style.css' %}">
 </head>
 <body>
     <div class="banner">
@@ -10,10 +12,10 @@
                 <p><b>Search a Meal | Account</b></p>
             </div>
             <url>
-                <li><a href="MainMenu.html" target="_self">Home</a></li>
-                <li><a href="AboutPage.html" target="_self">About</a></li>
-                <li><a href="UserPage.html" target="_self">Account</a></li>
-                <li><a href="'#">Login</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/recipes/about">About</a></li>
+                <li><a href="/recipes/account/">Account</a></li>
+                <li><a href="/recipes/login">Login</a></li>
             </url>
         </div>
         <hr>
