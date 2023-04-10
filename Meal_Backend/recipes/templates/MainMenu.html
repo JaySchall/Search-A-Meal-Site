@@ -9,31 +9,43 @@
 <body>
     <div class="banner">
         <div class = "navbar">
-            <div class = "webname">
+          <!--  <div class = "webname">
                 <hl>Search A Meal</hl>
                 <form action="" class="search-bar" method="get">
                     <input type="text" placeholder="Search a Recipe..." name="q">
                     <button type="submit"><img src="{% static 'recipes/images/search.png' %}"></button>
                 </form>
             </div>
-
+        -->
+            <div class = "searching">
+                <form action="" class="search-bar" method="get">
+                    <input class = "search-bar" type="text" placeholder="Search a Recipe..." name="q">
+                    <button type="submit"><img src="{% static 'recipes/images/search.png' %}"></button>
+                </form>
+                
+                
+            </div>
+            <div class="title">
+                <p><b>Search a Meal</b></p>
+            </div>
 
             <url>
-                <li><a href="">Home</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="">Account</a></li>
-                <li><a href="login">Login</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/recipes/about">About</a></li>
+                <li><a href="UserPage.html" target="_self">Account</a></li>
+                <li><a href="/recipes/login">Login</a></li>
             </url>
         </div>
-        <div class="recipelist">
-            {% for recipe in recipes %}
-            <a href="{% url 'Recipe_Item' recipe.name %}"><div class="recipeitem">
-                <h3>{{ recipe.name }}</h3>
-                <p>{{ recipe.description }}</p>
-            </div></a>
-            {% endfor %}
-        </div>
-        
+        <hr>
+    </div>
+
+    <div class="recipelist">
+        {% for recipe in recipes %}
+        <a href="{% url 'Recipe_Item' recipe.name %}"><div class="recipeitem">
+            <h3>{{ recipe.name }}</h3>
+            <p>{{ recipe.description }}</p>
+        </div></a>
+        {% endfor %}
     </div>
 </body> 
 
