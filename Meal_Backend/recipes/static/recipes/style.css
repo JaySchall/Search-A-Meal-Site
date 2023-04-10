@@ -298,8 +298,11 @@
 
 
 .InfoContent{
+    
     height: fit-content;
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
     text-align: left;
     position: relative;

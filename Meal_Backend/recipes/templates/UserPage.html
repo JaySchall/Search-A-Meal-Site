@@ -27,9 +27,12 @@
         <div class = "InfoContent">
             <h2> Bookmarked Recipes</h2>
             
-            <p>- Example</p>
-            <p>- Example</p>
-            <p>- Example</p>
+            {% for recipe in recipes %}
+            <a href="{% url 'Recipe_Item' recipe.name %}"><div class="recipeitem">
+                <h3>{{ recipe.name }}</h3>
+                <p>{{ recipe.description }}</p>
+            </div></a>
+        {% endfor %}
             
         </div>
 
