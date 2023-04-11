@@ -23,6 +23,7 @@
     margin-bottom: 10px;
     padding: 20px;
     border-radius: 20px;
+    display: inline-block;
 }
 
 .recipelist a{
@@ -115,12 +116,13 @@
 /*Some Gabe stuff*/
 .center{
     text-align: center;
+    margin: 5% auto;
  }
 
  .Bg{
     height: 100vh;
     width: 100%;
-    background-color: #a0d6b4;
+    background-color: #9ed9f9;
     position: absolute;
  }
  .Box{
@@ -131,6 +133,11 @@
     background-color: rgb(250, 250, 250);
     padding: 5px;
     border-radius: 20px;
+ }
+
+ .Box h3{
+    margin: auto 15%;
+   
  }
  
  
@@ -151,7 +158,7 @@
  
  .Box .search-bar{
     margin: auto;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
@@ -164,6 +171,14 @@
     outline: none;
     font-size: 20px;
     color: rgb(20, 20, 20);
+}
+
+.Box .UserPass{
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
  
  .loginOrRegister{
@@ -194,13 +209,13 @@
     border-radius: 15px;
     font-size: 20px;
     cursor: pointer;
-    background: #a0d6b4;
+    background: #9ed9f9;
     
  }
  .titlebox{
     position: relative;
     top: 20px;
-    border-radius: 15px;
+    border-radius: 10px;
     margin: auto;
     padding: 10px;
     width: fit-content;
@@ -210,7 +225,6 @@
  .title{
     position: relative;
     color: black;
-    margin-top: 10px;
     border: 1px transparent;
     font-size: 30px;
     text-decoration: none;
@@ -306,4 +320,10 @@
     padding: 0;
     text-align: left;
     position: relative;
+}
+
+
+.DisplayImage{
+    width: 7%;
+    height: 7%;
 }

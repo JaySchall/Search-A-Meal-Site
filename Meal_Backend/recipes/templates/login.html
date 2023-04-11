@@ -10,17 +10,22 @@
  <body>
       <div class = "Bg">
          <div class="titlebox">
-            <a href="../" class="title">Search A Meal</a>
+            <a href="../" class="title"><b>Search A Meal</b></a>
          </div>
          
          <div class ="Box">
+            
             <div class ="center"><h2>Welcome Back!</h2></div>
+            
+
             <form method="POST">
                {% csrf_token %}
+            <h3>Username</h3>
             <div class = "search-bar">
                {{ form.email }}
                <!--<input type = "username" required placeholder = "Username">-->
             </div>
+            <h3>Password</h3>
             <div class = "search-bar">
                {{ form.password }}
                <!--<input type = "password" required placeholder ="Password">-->
