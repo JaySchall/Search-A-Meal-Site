@@ -10,16 +10,17 @@
 <body>
      <div class = "Bg">
       <div class="titlebox">
-         <a href="../" class="title">Search A Meal</a>
+         <a href="../" class="title"><b>Search A Meal</b></a>
       </div>
-        <div class ="Box">
-           <div class ="center"><h2>Welcome!</h2></div>
-           <form method="POST">
+
+      <div class ="Box">
+         <div class ="center"><h2>Welcome!</h2></div>
+            <form method="POST">
             {% csrf_token %}
 
             
             
-            
+            <h3>Register Username</h3>
             <div class = "search-bar">
                {{ form.email }}
               <!--<input id = "email" type = "Email" required placeholder = "Enter Your Email">-->
@@ -28,13 +29,14 @@
                {{ form.displayname }}
             <input id = "displayname" type = "Display Name" required placeholder = "Enter a Display Name">
             </div>-->
+            <h3>Register Password</h3>
             <div class = "search-bar">
                {{ form.password }}
               <!--<input id = "password" type = "password" required placeholder = "Enter a Password">-->
             </div>
-               <input type = "submit" value = "Register">
+            <input type = "submit" value = "Register">
             </form>
-           <div class = "loginOrRegister">
+            <div class = "loginOrRegister">
               Already have an account? <a href="../login">Login Here</a>
            </div>
          </div>

@@ -25,8 +25,8 @@
         <hr>
     </div>
 
-    <div class = "Account Info">
-        <h1>  Who Are We?</h1>
+    <div class = "AccountInfo">
+        <h1> About Us</h1>
     </div>
     
         <div class = "InfoBox">
@@ -49,7 +49,7 @@
             </div>
     </div>
 
-    <div class = "Account Info">
+    <div class = "AccountInfo">
         <h1> Our Project: Search a Meal</h1>
     </div>
     
@@ -57,10 +57,56 @@
             <div class = "InfoContent">
                 <p>
                     Our project, Search a Meal, is a search engine for recipes. Users can simply search
-                    for recipes within our database using the search bar under <a href="MainMenu.html" target="_self">Home</a>.
+                    for recipes within our database using the search bar under <a href="/">Home</a>.
                     Users can create an account to store/save all the recipes they have come across. They
-                    can go back and view all their save/bookmarked recipes under the <a href="UserPage.html" target="_self">Account</a>
-                    tab. If the user does not have an account, they can register for an account under the <a href="'#">Login</a> tab.
+                    can go back and view all their save/bookmarked recipes under the                 
+                    {% if user.is_authenticated %}
+                    <a href="/recipes/account/">Account</a>
+                    {% else %}
+                    Account
+                    {% endif %}
+                    tab. If the user does not have an account, they can register for an account under the 
+                    {% if user.is_authenticated %}
+                    Login
+                    {% else %}
+                    <a href="/recipes/login">Login</a>
+                    {% endif %}
+                     tab.
+                </p>
+            
+            </div>
+    </div>
+
+    <div class = "AccountInfo">
+        <h1> Contact Us</h1>
+    </div>
+    
+        <div class = "InfoBox">
+            <div class = "InfoContent">
+                <div class = "Contacts"></div>
+                    <div>
+                        <p>
+                            <b> Jonathan Schall: <br></b>
+                            Email: jcschal@umich.edu <br>
+                            Phone: 777-777-7777 <br>
+                        </p>
+                    </div>
+                
+                    <div>
+                        <p>
+                            <b> Gabe Gonzales: <br></b>
+                            Email: gabgonz@umich.edu <br>
+                            Phone: 222-222-2222 <br>
+                        </p>
+                    </div>
+
+                    <div>
+                        <p>
+                            <b> Jerome Marudo: <br></b>
+                            Email: jpmarudo@umich.edu <br>
+                            Phone: 333-333-3333 <br>
+                        </p>
+                    </div>
                 </p>
             
             </div>

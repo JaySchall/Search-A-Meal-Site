@@ -114,10 +114,11 @@
 }
 
 /*Some Gabe stuff*/
-.center{
+.Box .center{
     text-align: center;
     margin: 5% auto;
  }
+
 
  .Bg{
     height: 100vh;
@@ -133,6 +134,7 @@
     background-color: rgb(250, 250, 250);
     padding: 5px;
     border-radius: 20px;
+    display: inline-block;
  }
 
  .Box h3{
@@ -295,8 +297,19 @@
     align-items: left;
 
 }
+
+.AccountInfo {
+    width: fit-content;
+    height: fit-content;
+    margin: 30% 30%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
 .InfoBox{
-    width: 90%;
+    width: fit-content;
     height: fit-content;
     margin: 5%;
     margin-top: 0;
@@ -315,13 +328,17 @@
     
     height: fit-content;
     margin: 0;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
     padding: 0;
     text-align: left;
     position: relative;
 }
 
+.Contacts{
+    align-items: center;
+    display: inline-block;
+}
 
 .DisplayImage{
     width: 7%;
