@@ -244,10 +244,19 @@
  }
 
  .background{
+    width: fit-content;
+    height: fit-content;
     margin: 30px auto;
     display: flex;
     align-items: center;
+    justify-items: center;
 }
+
+.background .center{
+    display: flex;
+    justify-content: center;
+ }
+
 .text{
     margin: 30px auto;
     display: flex;
@@ -263,38 +272,68 @@
 }
 .bookmark{
     height:25px;
-    margin-left: 20px;
+    margin-left: 5px;
     cursor: pointer;
 }
 .food{
-    height: 400px;
-    width: 400px;
+    height: 35%;
+    width: 35%;
+    border: 1px solid;
+    box-shadow: 5px 10px;
+    margin: 30px;
     float: right;
 }
 .Desc{
-    height: 200px;
-    width:650px;
+    height: fit-content;
+    width:fit-content;
+    border: 1px;
+    border-style: solid;
+    background-color: #9ed9f9;
+    border-color: rgb(0, 0, 0);
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 10px;
     text-align: left;
-    position:left;
+    display: flex;
     align-items: left;
-
+    justify-content: baseline;
 }
+
 .Ingredients{
-    height:200px;
-    width:650px;
+    height: fit-content;
+    width:fit-content;
+    border: 1px;
+    border-style: solid;
+    background-color: #e2f5ff;
+    border-color: rgb(0, 0, 0);
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 10px;
     text-align: left;
-    position:left;
+    display: flex;
     align-items: left;
-    float: left;
+    justify-content: center;
 
 }
 .Instructions{
-    height:300px;
-    width:650px;
+    height: fit-content;
+    width:fit-content;
+    border: 1px;
+    border-style: solid;
+    background-color: #9ed9f9;
+    border-color: rgb(0, 0, 0);
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 10px;
     text-align: left;
-    position:left;
+    display: flex;
     align-items: left;
-
+    justify-content: center;
 }
 
 .AccountInfo {
