@@ -282,6 +282,7 @@
     box-shadow: 5px 10px;
     margin: 30px;
     float: right;
+    display: flex;
 }
 .Desc{
     height: fit-content;
