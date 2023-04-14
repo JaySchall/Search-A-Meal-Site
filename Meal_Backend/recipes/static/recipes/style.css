@@ -282,7 +282,6 @@
     box-shadow: 5px 10px;
     margin: 30px;
     float: right;
-    display: flex;
 }
 .Desc{
     height: fit-content;
@@ -322,6 +321,7 @@
 .Instructions{
     height: fit-content;
     width:fit-content;
+    max-width: 50%;
     border: 1px;
     border-style: solid;
     background-color: #9ed9f9;
