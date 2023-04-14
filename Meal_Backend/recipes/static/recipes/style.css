@@ -284,6 +284,7 @@
     float: right;
 }
 .Desc{
+    max-width: calc(100% - 80px);
     height: fit-content;
     width:fit-content;
     border: 1px;
